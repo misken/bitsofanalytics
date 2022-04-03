@@ -31,7 +31,7 @@ Background
 Here's the scenario. You do scientific computing in Python and as part of your work you end up
 developing some useful little library - let's call it ``qng.py``. Yes, it's a library of queueing related
 functions. You might not have it in good enough shape to release
-into the wild via PyPI but you find yourself using it quite a bit and are tired of (and embarassed by)copying the
+into the wild via PyPI but you find yourself using it quite a bit and are tired of (and embarassed by) copying the
 ``qng.py`` file into multiple projects that use it. So, you create a proper Python project structure so that you
 can create a deployable package. Here's a simplified version of the actual project structure:
 
@@ -82,8 +82,7 @@ numpy, pandas, scikit-learn, simpy and a number of others. Here's what my YAML f
 	  - scikit-learn
 	  - matplotlib
 	  - seaborn
-	  - jupyter
-	  - jupyterlab
+	  - ipykernel
 	  - simpy
 	  - networkx
 	  - statsmodels

@@ -23,7 +23,7 @@ blog_title = "Bits of analytics"
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
-blog_baseurl = ""
+blog_baseurl = "https://misken.github.io/"
 
 # Choose to archive only post titles. Archiving only titles can speed
 # up project building.
@@ -194,6 +194,7 @@ extensions = [
     'myst_parser',
     'nbsphinx'
 ]
+myst_update_mathjax = False
 
 
 # Add any paths that contain templates here, relative to this directory.
