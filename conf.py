@@ -126,7 +126,7 @@ html_sidebars = {
 # blog_feed_subtitle = None
 
 # Choose to feed only post titles, default is ``False``.
-# blog_feed_titles = False
+blog_feed_titles = True
 
 # Specify custom Jinja2 templates for feed entry elements:
 #     `title`, `summary`, or `content`
