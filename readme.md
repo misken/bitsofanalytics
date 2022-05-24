@@ -2,9 +2,9 @@
 
 This is the content repo for my blog. The blog itself is hosted at
 [https://misken.github.io/](https://misken.github.io/). This blog
-replaces my [hselab.org](https://hselab.org/) blog whiich I'm in the process of retiring.
+replaces my [hselab.org](https://hselab.org/) blog which I'm in the process of retiring.
 
-This new blog has the same focus, just a different set of static blogging tools.
+This new blog has the same focus, just a different set of static blogging tools:
 
 * posts written in restructuredText, markdown and Jupyter notebooks,
 * [Sphinx](https://www.sphinx-doc.org/en/master/) used as the website creation engine,

@@ -1,6 +1,9 @@
 .. post:: Jul 13, 2018
    :author: misken
-   :tags: gis, hiking
+   :tags: gis, hiking, gps
+   :exclude:
+   
+   Get data off your Garmin with Ubuntu based tools
    
 Using Ubuntu to acquire and manage GPS data from Garmin eTrex
 #######################################################################
