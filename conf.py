@@ -103,14 +103,34 @@ blog_authors = {
 # a link to a archive pages generated for each tag, category, and year.
 # In addition, there are authors.html, languages.html, and locations.html
 # sidebars that link to author and location archive pages.
+
 html_sidebars = {
-    '**': [ 'about.html',
-            'postcard.html', 'navigation.html',
+    '**': [ 'postcard.html',
             'recentposts.html', 'tagcloud.html',
             'categories.html',  'archives.html',
             'searchbox.html',
             ],
     }
+    
+# html_sidebars = {
+    # '**': [ 'about.html',
+            # 'postcard.html', 'navigation.html',
+            # 'recentposts.html', 'tagcloud.html',
+            # 'categories.html',  'archives.html',
+            # 'searchbox.html',
+            # ],
+    # }
+    
+# html_sidebars = {
+    # "index": ["hello.html"],
+    # "about": ["hello.html"],
+    # "publications": ["hello.html"],
+    # "projects": ["hello.html"],
+    # "talks": ["hello.html"],
+    # "posts/**": ['postcard.html', 'recentposts.html', 'archives.html'],
+    # "blog": ['tagcloud.html', 'archives.html'],
+    # "blog/**": ['postcard.html', 'recentposts.html', 'archives.html']
+# }
 
 # -- Blog Feed Options --------------------------------------------------------
 
@@ -189,11 +209,33 @@ needs_sphinx = '1.2'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'alabaster',
     'ablog',
     'myst_parser',
-    'nbsphinx'
+    'nbsphinx',
+    "sphinx_design"
 ]
+
+myst_enable_extensions = ["colon_fence"]
+
+# My original extensions
+# extensions = [
+    # 'alabaster',
+    # 'ablog',
+    # 'myst_parser',
+    # 'nbsphinx'
+# ]
+
+
+# Chris Holdraf's extensions
+# extensions = [
+    # "myst_nb",
+    # "ablog",
+    # "sphinx_panels",
+    # "sphinxcontrib.bibtex",
+    # "sphinxext.opengraph",
+    # "sphinxext.rediraffe",
+# ]
+
 myst_update_mathjax = False
 
 
@@ -285,17 +327,26 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+# html_theme = 'alabaster'
+# Add any paths that contain custom themes here, relative to this directory.
+#html_theme_path = [alabaster.get_path()]
+
+html_theme = 'pydata_sphinx_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
+
 html_theme_options = {
-    'github_button': False,
+    "google_analytics_id": "G-J4FJ8W6Y2K",
 }
 
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [alabaster.get_path()]
+# The following is only relevant for alabaster
+# html_theme_options = {
+    # 'github_button': False,
+# }
+
+
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
